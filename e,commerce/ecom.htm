@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shopcommerce</title>
+  <link rel="stylesheet" href="ecom.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">ShopWith-uS</a>
+
+      <nav class="nav">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="cartBtn" class="icon-btn" aria-label="Open cart">
+        🛒 <span id="cartCount" class="badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- CART PANEL -->
+<div id="cartPanel" class="cart-panel">
+  <div class="cart-header">
+    <h2>My Cart</h2>
+    <button id="closeCart" class="close-cart" aria-label="Close cart">✖</button>
+  </div>
+
+  <div id="cartItems"></div>
+
+  <h3>Total: ₱<span id="cartTotal">0</span></h3>
+  <button class="btn-primary" onclick="clearCart()">Clear Cart</button>
+</div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">FOOT-WEAR</h1>
+      <p class="lead">Discover our footwear collection.</p>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="section container">
+    <h2 class="section-title">Products</h2>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="high.jpeg" class="product-img" loading="lazy" alt="Nike Air Runner">
+        <h3>Nike Air Runner</h3>
+        <p class="price">₱2,999</p>
+        <button class="btn-primary add-to-cart" data-name="Nike Air Runner" data-price="2999">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="highvans.jpeg" class="product-img" loading="lazy" alt="High Cut Vans">
+        <h3>High Cut Vans</h3>
+        <p class="price">₱2,899</p>
+        <button class="btn-primary add-to-cart" data-name="High Cut Vans" data-price="2899">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="world balance.JPEG" class="product-img" loading="lazy" alt="World Balance Shoes">
+        <h3>World Balance Shoes</h3>
+        <p class="price">₱2,899</p>
+        <button class="btn-primary add-to-cart" data-name="World Balance Shoes" data-price="2899">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="Vans.JPEG" class="product-img" loading="lazy" alt="Old School Vans">
+        <h3>Old School Vans</h3>
+        <p class="price">₱2,500</p>
+        <button class="btn-primary add-to-cart" data-name="Old School Vans" data-price="2500">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="SNEAKERS.JPEG" class="product-img" loading="lazy" alt="Classic Sneakers">
+        <h3>Classic Sneakers</h3>
+        <p class="price">₱1,899</p>
+        <button class="btn-primary add-to-cart" data-name="Classic Sneakers" data-price="1899">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="adidas.jpg" class="product-img" loading="lazy" alt="Adidas Running Shoes">
+        <h3>Adidas Running Shoes</h3>
+        <p class="price">₱3,899</p>
+        <button class="btn-primary add-to-cart" data-name="Adidas Running Shoes" data-price="3899">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <h2 class="animated-heading">About</h2>
+    <p>Browse products and add items to your cart easily.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <h2 class="animated-heading">Contact</h2>
+    <ul>
+      <li>Email: antonampatuan@gmail.com</li>
+      <li>Phone: +63 906 702 3312</li>
+    </ul>
+  </section>
+
+  <script src="ecom.js"></script>
+</body>
+
+</html>

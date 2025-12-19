@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../my portfolio"
+		},
+		{
+			"path": "../facial recognition"
+		}
+	],
+	"settings": {
+		"fiveServer.injectBody": true,
+		"fiveServer.navigate": true,
+		"fiveServer.openTerminal": true,
+		"liveServer.settings.multiRootWorkspaceName": "e,commerce",
+		"liveServer.settings.port": 5501
+	}
+}
